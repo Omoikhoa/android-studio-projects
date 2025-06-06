@@ -1,0 +1,16 @@
+<!--Assignment 01a-->
+<!--Assignment01a.zip-->
+<!--Alex Ilevbare-->
+
+<resources>
+    <string name="app_name">Assignment1a</string>
+    <string name="temperature_conversion">Temperature Conversion</string>
+    <string name="temperature">Temperature:</string>
+    <string name="temperature_hint">Enter Temperature</string>
+    <string name="conversion">Conversion:</string>
+
+    <string name="conversion_1">C to F</string>
+    <string name="conversion_2">F to C</string>
+    <string name="reset">Reset</string>
+
+</resources>

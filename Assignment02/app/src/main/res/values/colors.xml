@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Assignment 02-->
+<!--    Assignment02.zip-->
+<!--    Alex Ilevbare-->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#408000</color>
+
+</resources>

@@ -1,0 +1,21 @@
+<!--Assignment 02-->
+<!--Assignment02.zip-->
+<!--Alex Ilevbare-->
+
+<resources>
+    <string name="app_name">Assignment02</string>
+    <string name="color_selection">Color Selection</string>
+    <string name="color_hex">Color HEX: #408000</string>
+    <string name="color_rbg">Color RGB: (64, 128, 0)</string>
+    <string name="red">Red:</string>
+    <string name="red_text">64</string>
+    <string name="green">Green:</string>
+    <string name="green_text">128</string>
+    <string name="blue">Blue:</string>
+    <string name="blue_text">0</string>
+    <string name="white_button">White</string>
+    <string name="black_button">Black</string>
+    <string name="blue_button">Blue</string>
+    <string name="reset">Reset</string>
+
+</resources>

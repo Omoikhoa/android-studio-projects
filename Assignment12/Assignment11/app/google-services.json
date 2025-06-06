@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087264740149",
+    "project_id": "fir-demoapp-fb180",
+    "storage_bucket": "fir-demoapp-fb180.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087264740149:android:b0ada8fb9f2f8179bcb27c",
+        "android_client_info": {
+          "package_name": "edu.uncc.assignment11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY_H"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

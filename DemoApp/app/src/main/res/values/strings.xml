@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Evaluation2</string>
+    <string name="calorie_calculator">Calorie Calculator</string>
+    <string name="gender">Gender: </string>
+    <string name="na">N/A</string>
+    <string name="weight">Weight (lbs):</string>
+    <string name="height">Height:</string>
+    <string name="age">Age:</string>
+    <string name="activity_level">Activity Level:</string>
+    <string name="select">Select</string>
+    <string name="female">Female</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="select_age">Select Age</string>
+    <string name="male">Male</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="select_weight">Select Weight</string>
+    <string name="height_in">Height (in):</string>
+    <string name="enter_height">Enter Height ft</string>
+    <string name="enter_height_in">Enter Height in</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="select_height">Select Height</string>
+    <string name="select_activity_level">Activity Level</string>
+    <string name="age_years">Age (years):</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="activity_level1">Activity Level</string>
+    <string name="Sedentary">Sedentary</string>
+    <string name="Lightly_Active">Lightly Active</string>
+    <string name="Moderately_Active">Moderately Active</string>
+    <string name="Very_Active">Very Active</string>
+    <string name="Super_Active">Super Active</string>
+    <string name="your_calories_details">Your Calories Details</string>
+    <string name="back">Back</string>
+    <string name="total_daily_energy_expenditure">Total Daily Energy Expenditure</string>
+
+
+</resources>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonBeerMinus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/minus"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBeerAmount"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroupGender" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bac_calculator"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/weight_lbs"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimalEnterWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimalEnterWeight" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalEnterWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/enter_weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/gender"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/RadioGroupGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/RadioGroupGender" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/beer"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBeerMinus"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/buttonBeerMinus" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalEnterWeight">
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/twelve_oz"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBeerMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBeerMinus" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonBeerMinus"
+        app:srcCompat="@drawable/drink_beer" />
+
+    <Button
+        android:id="@+id/buttonBeerPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plus"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBeerAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBeerAmount" />
+
+    <TextView
+        android:id="@+id/textViewBeerAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/zero"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBeerMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBeerPlus"
+        app:layout_constraintTop_toTopOf="@+id/buttonBeerMinus" />
+
+    <Button
+        android:id="@+id/buttonBeerMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBeerAmount"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroupGender" />
+
+    <Button
+        android:id="@+id/buttonWinePlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plus"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWineAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewWineAmount" />
+
+    <TextView
+        android:id="@+id/textViewWineAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/zero"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonWineMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWinePlus"
+        app:layout_constraintTop_toTopOf="@+id/buttonWineMinus" />
+
+    <Button
+        android:id="@+id/buttonWineMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus"
+        app:layout_constraintEnd_toStartOf="@+id/textViewWineAmount"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBeerMinus2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/wine"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWineMinus"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/buttonWineMinus" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/five_oz"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonWineMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWineMinus"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="59dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonWineMinus"
+        app:srcCompat="@drawable/drink_wine" />
+
+    <Button
+        android:id="@+id/buttonLiquorPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLiquorAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewLiquorAmount" />
+
+    <Button
+        android:id="@+id/buttonMaltPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMaltAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMaltAmount" />
+
+    <Button
+        android:id="@+id/buttonLiquorMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLiquorAmount"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWineMinus" />
+
+    <Button
+        android:id="@+id/buttonMaltMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/minus"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMaltAmount"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLiquorMinus" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor" />
+
+    <TextView
+        android:id="@+id/textViewLiquorAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/zero"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLiquorMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLiquorPlus"
+        app:layout_constraintTop_toTopOf="@+id/buttonLiquorMinus" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/liquor_drinks"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLiquorMinus"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/buttonLiquorMinus" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/one_half_oz"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLiquorMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLiquorMinus"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonLiquorMinus"
+        app:srcCompat="@drawable/drink_liquor" />
+
+    <TextView
+        android:id="@+id/textViewMaltAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/zero"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMaltMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMaltPlus"
+        app:layout_constraintTop_toTopOf="@+id/buttonMaltMinus" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/malt_liquor"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMaltMinus"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/buttonMaltMinus" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nine_oz"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMaltMinus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMaltMinus" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="49dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonMaltMinus"
+        app:srcCompat="@drawable/drink_malt_liquor" />
+
+    <TextView
+        android:id="@+id/textViewBacLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bac_default"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMaltMinus" />
+
+    <View
+        android:id="@+id/viewColor"
+        android:layout_width="221dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/safe_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBacLevel" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor" />
+
+    <TextView
+        android:id="@+id/textViewSafety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/you_are_safe"
+        android:textColor="@color/white"
+        android:textColorLink="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewColor"
+        app:layout_constraintEnd_toEndOf="@+id/viewColor"
+        app:layout_constraintStart_toStartOf="@+id/viewColor"
+        app:layout_constraintTop_toTopOf="@+id/viewColor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
